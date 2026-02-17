@@ -1,0 +1,137 @@
+{
+  "case_id": "SAR-2026-003089",
+  "alert_date": "2026-02-14",
+  "customer": {
+    "name": "Vijay Enterprises Private Limited",
+    "customer_id": "CORP-184729",
+    "account_number": "5678-9012-3456",
+    "account_type": "Corporate Current Account",
+    "account_open_date": "2024-06-10",
+    "date_of_birth": "N/A",
+    "occupation": "Import-Export Company",
+    "business_type": "Trading - Electronics",
+    "address": "789 Business Park, Bangalore, Karnataka 560001",
+    "phone": "+91-8012345678",
+    "email": "info@vijayenterprises.com",
+    "pan": "AAECV1234P",
+    "kyc_last_updated": "2025-11-15",
+    "risk_rating": "High",
+    "average_monthly_balance": "₹5,00,000",
+    "company_directors": "Vikram Shah, Anjali Rao",
+    "company_incorporation": "2024-05-20"
+  },
+  "alert_details": {
+    "alert_type": "Circular Transaction Network",
+    "alert_subtype": "Shell Company Layering",
+    "alert_score": 95,
+    "alert_priority": "Critical",
+    "alert_reason": "Circular money movement between 5 related entities, ₹45 lakhs circulating with no apparent business purpose, minimal value addition",
+    "investigation_start_date": "2026-02-14",
+    "analyst": "Suresh Kumar",
+    "reviewer": "Meera Desai"
+  },
+  "suspicious_activity_period": {
+    "start_date": "2026-01-15",
+    "end_date": "2026-02-10",
+    "total_days": 26
+  },
+  "incoming_transactions": {
+    "total_count": 12,
+    "total_amount": "₹45,80,000",
+    "total_amount_numeric": 4580000,
+    "average_amount": "₹3,81,667",
+    "transactions": [
+      {"date": "2026-01-15", "from_account": "1111-2222-3333", "from_name": "Global Tech Solutions Ltd", "amount": "₹8,50,000", "mode": "RTGS", "purpose": "Consulting services"},
+      {"date": "2026-01-18", "from_account": "4444-5555-6666", "from_name": "Metro Trading Co", "amount": "₹6,20,000", "mode": "NEFT", "purpose": "Product supply"},
+      {"date": "2026-01-22", "from_account": "7777-8888-9999", "from_name": "Sunrise Exports Pvt Ltd", "amount": "₹5,80,000", "mode": "RTGS", "purpose": "Commission payment"},
+      {"date": "2026-01-25", "from_account": "1111-2222-3333", "from_name": "Global Tech Solutions Ltd", "amount": "₹4,50,000", "mode": "NEFT", "purpose": "Marketing services"},
+      {"date": "2026-01-28", "from_account": "2222-3333-4444", "from_name": "Peak Ventures India", "amount": "₹7,30,000", "mode": "RTGS", "purpose": "Partnership proceeds"},
+      {"date": "2026-02-01", "from_account": "4444-5555-6666", "from_name": "Metro Trading Co", "amount": "₹3,90,000", "mode": "NEFT", "purpose": "Inventory payment"},
+      {"date": "2026-02-03", "from_account": "7777-8888-9999", "from_name": "Sunrise Exports Pvt Ltd", "amount": "₹2,80,000", "mode": "RTGS", "purpose": "Referral bonus"},
+      {"date": "2026-02-05", "from_account": "2222-3333-4444", "from_name": "Peak Ventures India", "amount": "₹1,90,000", "mode": "NEFT", "purpose": "Service charges"},
+      {"date": "2026-02-06", "from_account": "1111-2222-3333", "from_name": "Global Tech Solutions Ltd", "amount": "₹1,50,000", "mode": "IMPS", "purpose": "Consulting"},
+      {"date": "2026-02-08", "from_account": "4444-5555-6666", "from_name": "Metro Trading Co", "amount": "₹1,20,000", "mode": "NEFT", "purpose": "Freight charges"},
+      {"date": "2026-02-09", "from_account": "7777-8888-9999", "from_name": "Sunrise Exports Pvt Ltd", "amount": "₹90,000", "mode": "IMPS", "purpose": "Reimbursement"},
+      {"date": "2026-02-10", "from_account": "2222-3333-4444", "from_name": "Peak Ventures India", "amount": "₹1,30,000", "mode": "NEFT", "purpose": "Settlement"}
+    ],
+    "unique_counterparties": 4,
+    "pattern_notes": "Funds received from same 4 entities repeatedly, all companies incorporated within 6 months of each other"
+  },
+  "outgoing_transactions": {
+    "total_count": 15,
+    "total_amount": "₹44,95,000",
+    "transactions": [
+      {"date": "2026-01-16", "to_account": "4444-5555-6666", "beneficiary_name": "Metro Trading Co", "amount": "₹7,80,000", "purpose": "Purchase order advance"},
+      {"date": "2026-01-19", "to_account": "7777-8888-9999", "beneficiary_name": "Sunrise Exports Pvt Ltd", "amount": "₹5,90,000", "purpose": "Export facilitation"},
+      {"date": "2026-01-20", "to_account": "2222-3333-4444", "beneficiary_name": "Peak Ventures India", "amount": "₹4,20,000", "purpose": "Joint venture investment"},
+      {"date": "2026-01-23", "to_account": "1111-2222-3333", "beneficiary_name": "Global Tech Solutions Ltd", "amount": "₹6,50,000", "purpose": "Technology license"},
+      {"date": "2026-01-26", "to_account": "4444-5555-6666", "beneficiary_name": "Metro Trading Co", "amount": "₹3,80,000", "purpose": "Supply chain payment"},
+      {"date": "2026-01-29", "to_account": "7777-8888-9999", "beneficiary_name": "Sunrise Exports Pvt Ltd", "amount": "₹4,10,000", "purpose": "Logistics services"},
+      {"date": "2026-02-02", "to_account": "1111-2222-3333", "beneficiary_name": "Global Tech Solutions Ltd", "amount": "₹2,90,000", "purpose": "IT infrastructure"},
+      {"date": "2026-02-04", "to_account": "2222-3333-4444", "beneficiary_name": "Peak Ventures India", "amount": "₹3,60,000", "purpose": "Business development"},
+      {"date": "2026-02-05", "to_account": "4444-5555-6666", "beneficiary_name": "Metro Trading Co", "amount": "₹1,80,000", "purpose": "Warehouse rental"},
+      {"date": "2026-02-07", "to_account": "7777-8888-9999", "beneficiary_name": "Sunrise Exports Pvt Ltd", "amount": "₹1,40,000", "purpose": "Documentation fees"},
+      {"date": "2026-02-07", "to_account": "1111-2222-3333", "beneficiary_name": "Global Tech Solutions Ltd", "amount": "₹95,000", "purpose": "Software subscription"},
+      {"date": "2026-02-09", "to_account": "2222-3333-4444", "beneficiary_name": "Peak Ventures India", "amount": "₹70,000", "purpose": "Advisory services"},
+      {"date": "2026-02-10", "to_account": "4444-5555-6666", "beneficiary_name": "Metro Trading Co", "amount": "₹60,000", "purpose": "Misc charges"},
+      {"date": "2026-02-10", "to_account": "7777-8888-9999", "beneficiary_name": "Sunrise Exports Pvt Ltd", "amount": "₹50,000", "purpose": "Processing fee"},
+      {"date": "2026-02-10", "to_account": "1111-2222-3333", "beneficiary_name": "Global Tech Solutions Ltd", "amount": "₹40,000", "purpose": "Final settlement"}
+    ],
+    "pattern_notes": "Outgoing transfers to same entities that sent incoming funds, creating circular pattern"
+  },
+  "additional_context": {
+    "network_analysis": {
+      "entity_1": "Vijay Enterprises (subject)",
+      "entity_2": "Global Tech Solutions Ltd - Director: Vikram Shah (same as Vijay Ent.)",
+      "entity_3": "Metro Trading Co - Director: Anjali Rao (same as Vijay Ent.)",
+      "entity_4": "Sunrise Exports Pvt Ltd - Director: Pradeep Shah (brother of Vikram Shah)",
+      "entity_5": "Peak Ventures India - Director: Rajesh Rao (brother of Anjali Rao)",
+      "relationship": "All 5 entities controlled by same family group, same registered address"
+    },
+    "business_verification": {
+      "physical_presence": "Minimal - shared office space, no employees visible",
+      "trade_activity": "No evidence of actual goods/services exchange",
+      "invoices_checked": "Generic invoices with vague descriptions, no shipping documents",
+      "gst_returns": "Filed but revenue reported inconsistent with transaction volume"
+    },
+    "red_flags": [
+      "Circular transaction pattern: A→B→C→D→E→A",
+      "Same family members control all 5 entities",
+      "All companies incorporated within 6-month period",
+      "₹45 lakhs circulating with minimal economic value creation",
+      "No evidence of actual business activity or goods/services exchange",
+      "Generic invoice descriptions lack specificity",
+      "Shared office address across all entities",
+      "Transaction purposes vague and inconsistent",
+      "Pattern consistent with layering phase of money laundering",
+      "Appears designed to create illusion of legitimate business",
+      "Rapid back-and-forth transfers between related parties",
+      "Net position change minimal despite high transaction volume"
+    ],
+    "declared_business_activity": "Import-export of consumer electronics",
+    "actual_evidence": "No customs documentation, no shipping records, no inventory"
+  },
+  "typology_mapping": {
+    "primary_typology": "Layering (Money Laundering)",
+    "secondary_typologies": ["Shell Company Network", "Circular Transactions", "Trade-Based Money Laundering"],
+    "fincen_reference": "Complex Layering Schemes Using Multiple Entities",
+    "description": "Use of interconnected shell companies to move funds in circular patterns, creating appearance of legitimate business activity while obscuring the true source and ownership of funds"
+  },
+  "investigative_findings": {
+    "internal_checks": {
+      "adverse_media": "No media coverage found for any entity",
+      "watchlist_screening": "No sanctions hits",
+      "pep_screening": "Not politically exposed",
+      "previous_sars": "No prior SARs on this entity",
+      "related_accounts": "4 related accounts identified (other network entities)"
+    },
+    "external_verification": {
+      "corporate_registry": "All 5 companies incorporated 2024-2025, minimal paid-up capital",
+      "physical_verification": "Shared virtual office, no operational presence",
+      "trade_verification": "No customs records, no import/export documentation",
+      "director_background": "Directors share family relationship, multiple companies each",
+      "financial_statements": "Not filed / minimal activity reported"
+    },
+    "analyst_conclusion": "The interconnected network of related entities engaging in circular fund transfers with no demonstrable business purpose represents a sophisticated layering operation. The lack of legitimate business activity, combined with family control and shared infrastructure, indicates funds are being moved to obscure their origin. Recommends SAR filing and potential referral for deeper investigation."
+  }
+}

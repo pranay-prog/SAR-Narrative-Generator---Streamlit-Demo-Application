@@ -1,0 +1,278 @@
+{
+  "case_id": "SAR-2026-003156",
+  "alert_date": "2026-02-14",
+  "customer": {
+    "name": "Amit Gupta",
+    "customer_id": "CUST-781293",
+    "account_number": "2134-6789-0123",
+    "account_type": "Savings Account",
+    "account_open_date": "2023-05-10",
+    "date_of_birth": "1992-03-25",
+    "occupation": "Restaurant Owner",
+    "business_type": "Food & Beverage",
+    "address": "78 Park Street, Kolkata, West Bengal 700016",
+    "phone": "+91-9876012345",
+    "email": "amit.gupta@email.com",
+    "pan": "KLMNO9012P",
+    "kyc_last_updated": "2025-11-15",
+    "risk_rating": "Medium",
+    "average_monthly_balance": "₹1,25,000"
+  },
+  "alert_details": {
+    "alert_type": "Structured Deposits",
+    "alert_subtype": "Smurfing",
+    "alert_score": 89,
+    "alert_priority": "High",
+    "alert_reason": "23 cash deposits in 15 days, each below ₹49,000, totaling ₹10,58,000",
+    "investigation_start_date": "2026-02-14",
+    "analyst": "Kavita Sharma",
+    "reviewer": "Rajesh Malhotra"
+  },
+  "suspicious_activity_period": {
+    "start_date": "2026-01-20",
+    "end_date": "2026-02-03",
+    "total_days": 15
+  },
+  "incoming_transactions": {
+    "total_count": 23,
+    "total_amount": "₹10,58,000",
+    "total_amount_numeric": 1058000,
+    "average_amount": "₹46,000",
+    "transactions": [
+      {
+        "date": "2026-01-20",
+        "amount": "₹48,000",
+        "branch": "Park Street",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-01-20",
+        "amount": "₹47,500",
+        "branch": "Gariahat",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-01-21",
+        "amount": "₹49,000",
+        "branch": "Salt Lake",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-01-21",
+        "amount": "₹46,000",
+        "branch": "Park Street",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-01-22",
+        "amount": "₹48,500",
+        "branch": "Ballygunge",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-01-23",
+        "amount": "₹47,000",
+        "branch": "Gariahat",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-01-23",
+        "amount": "₹45,500",
+        "branch": "Salt Lake",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-01-24",
+        "amount": "₹48,000",
+        "branch": "Park Street",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-01-25",
+        "amount": "₹46,500",
+        "branch": "Ballygunge",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-01-26",
+        "amount": "₹49,000",
+        "branch": "Gariahat",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-01-27",
+        "amount": "₹47,500",
+        "branch": "Salt Lake",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-01-27",
+        "amount": "₹45,000",
+        "branch": "Park Street",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-01-28",
+        "amount": "₹48,000",
+        "branch": "Ballygunge",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-01-29",
+        "amount": "₹46,000",
+        "branch": "Gariahat",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-01-30",
+        "amount": "₹47,000",
+        "branch": "Salt Lake",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-01-31",
+        "amount": "₹49,000",
+        "branch": "Park Street",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-02-01",
+        "amount": "₹45,500",
+        "branch": "Ballygunge",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-02-01",
+        "amount": "₹48,000",
+        "branch": "Gariahat",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-02-02",
+        "amount": "₹46,500",
+        "branch": "Salt Lake",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-02-02",
+        "amount": "₹47,500",
+        "branch": "Park Street",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-02-03",
+        "amount": "₹49,000",
+        "branch": "Ballygunge",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-02-03",
+        "amount": "₹45,000",
+        "branch": "Gariahat",
+        "mode": "Cash Deposit"
+      },
+      {
+        "date": "2026-02-03",
+        "amount": "₹48,000",
+        "branch": "Salt Lake",
+        "mode": "Cash Deposit"
+      }
+    ],
+    "unique_counterparties": 1,
+    "unique_branches": 5,
+    "pattern_notes": "All deposits below ₹50,000 CTR threshold, spread across 5 branches"
+  },
+  "outgoing_transactions": {
+    "total_count": 3,
+    "total_amount": "₹9,50,000",
+    "transactions": [
+      {
+        "date": "2026-02-04",
+        "transaction_time": "11:30 IST",
+        "to_account": "JWL-5432-8901",
+        "beneficiary_name": "Diamond Jewelers",
+        "beneficiary_bank": "State Bank of India, Kolkata",
+        "amount": "₹3,50,000",
+        "purpose": "Gold purchase",
+        "mode": "RTGS"
+      },
+      {
+        "date": "2026-02-05",
+        "transaction_time": "14:15 IST",
+        "to_account": "RE-9876-3210",
+        "beneficiary_name": "Premium Real Estate",
+        "beneficiary_bank": "ICICI Bank, Kolkata",
+        "amount": "₹4,00,000",
+        "purpose": "Property advance",
+        "mode": "RTGS"
+      },
+      {
+        "date": "2026-02-06",
+        "transaction_time": "10:45 IST",
+        "to_account": "AUTO-2345-6789",
+        "beneficiary_name": "Luxury Auto Dealers",
+        "beneficiary_bank": "HDFC Bank, Kolkata",
+        "amount": "₹2,00,000",
+        "purpose": "Vehicle down payment",
+        "mode": "RTGS"
+      }
+    ],
+    "pattern_notes": "Large consolidated transfers immediately after structured deposits"
+  },
+  "additional_context": {
+    "normal_business_pattern": "Weekly cash deposits of ₹8,000-₹12,000 from restaurant operations",
+    "previous_international_transfers": 0,
+    "previous_international_transfer_dates": [],
+    "previous_avg_international_amount": "₹0",
+    "deposit_pattern_analysis": {
+      "total_deposits": 23,
+      "branches_used": 5,
+      "amount_range": "₹45,000 - ₹49,000",
+      "all_below_threshold": true
+    },
+    "business_verification": {
+      "restaurant_name": "Spice Garden Restaurant",
+      "declared_monthly_revenue": "₹3-4 lakhs",
+      "inconsistency": "Cannot generate ₹70,000+ daily deposits observed"
+    },
+    "historical_pattern": {
+      "normal_monthly_deposits": "₹1.5-2 lakhs",
+      "sudden_change": "Activity increased 5x in volume"
+    },
+    "red_flags": [
+      "Deliberate structuring below ₹50,000 CTR threshold",
+      "Multiple branches used (smurfing pattern)",
+      "Volume inconsistent with restaurant business",
+      "Immediate large outflows to high-value assets",
+      "No legitimate explanation for 5x deposit increase",
+      "Geographic spread suggests intentional avoidance"
+    ]
+  },
+  "typology_mapping": {
+    "primary_typology": "Structuring / Smurfing",
+    "secondary_typologies": [
+      "CTR Evasion",
+      "Placement Phase"
+    ],
+    "fincen_reference": "Structuring - Currency Transaction Reporting Evasion",
+    "description": "Breaking large amounts into smaller deposits below reporting thresholds"
+  },
+  "investigative_findings": {
+    "internal_checks": {
+      "adverse_media": "No hits",
+      "watchlist_screening": "Clear",
+      "pep_screening": "Not a PEP",
+      "previous_sars": "None"
+    },
+    "external_verification": {
+      "business_verification": "Restaurant exists but scale inconsistent",
+      "tax_filings": "Declared turnover ₹25-30L annually",
+      "premises_check": "Small 20-seat restaurant"
+    },
+    "analyst_conclusion": "Clear structuring pattern to evade reporting. Deposits deliberately below threshold, spread across branches. Business cannot support volumes. Recommend SAR filing."
+  }
+}
+
+
+
+

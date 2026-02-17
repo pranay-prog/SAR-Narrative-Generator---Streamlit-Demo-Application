@@ -1,0 +1,130 @@
+{
+  "case_id": "SAR-2026-001234",
+  "alert_date": "2026-02-10",
+  "customer": {
+    "name": "Rajesh Kumar Sharma",
+    "customer_id": "CUST-847291",
+    "account_number": "4567-8901-2345",
+    "account_type": "Savings Account",
+    "account_open_date": "2022-03-15",
+    "date_of_birth": "1985-06-20",
+    "occupation": "Small Business Owner",
+    "business_type": "Textile Trading",
+    "address": "123 MG Road, Mumbai, Maharashtra 400001",
+    "phone": "+91-9876543210",
+    "email": "rajesh.sharma@email.com",
+    "pan": "ABCDE1234F",
+    "kyc_last_updated": "2025-08-10",
+    "risk_rating": "Medium",
+    "average_monthly_balance": "₹2,50,000"
+  },
+  "alert_details": {
+    "alert_type": "Rapid Fund Movement",
+    "alert_subtype": "Structuring/Layering",
+    "alert_score": 87,
+    "alert_priority": "High",
+    "alert_reason": "Customer received ₹50,00,000 from 47 different accounts in 7 days, followed by immediate international wire transfer",
+    "investigation_start_date": "2026-02-10",
+    "analyst": "Priya Patel",
+    "reviewer": "Amit Verma"
+  },
+  "suspicious_activity_period": {
+    "start_date": "2026-02-01",
+    "end_date": "2026-02-08",
+    "total_days": 7
+  },
+  "incoming_transactions": {
+    "total_count": 47,
+    "total_amount": "₹50,00,000",
+    "total_amount_numeric": 5000000,
+    "average_amount": "₹1,06,383",
+    "transactions": [
+      {"date": "2026-02-01", "from_account": "9876-5432-1098", "from_name": "Vikram Industries", "amount": "₹98,500", "mode": "NEFT"},
+      {"date": "2026-02-01", "from_account": "8765-4321-0987", "from_name": "Sunita Trading Co", "amount": "₹1,15,000", "mode": "RTGS"},
+      {"date": "2026-02-01", "from_account": "7654-3210-9876", "from_name": "Mohit Exports", "amount": "₹87,000", "mode": "IMPS"},
+      {"date": "2026-02-02", "from_account": "6543-2109-8765", "from_name": "Neha Enterprises", "amount": "₹1,25,500", "mode": "NEFT"},
+      {"date": "2026-02-02", "from_account": "5432-1098-7654", "from_name": "Rahul Textiles", "amount": "₹95,000", "mode": "RTGS"},
+      {"date": "2026-02-02", "from_account": "4321-0987-6543", "from_name": "Kavita Imports", "amount": "₹1,08,000", "mode": "NEFT"},
+      {"date": "2026-02-02", "from_account": "3210-9876-5432", "from_name": "Deepak Trading", "amount": "₹99,500", "mode": "IMPS"},
+      {"date": "2026-02-03", "from_account": "2109-8765-4321", "from_name": "Anjali Fabrics", "amount": "₹1,18,000", "mode": "NEFT"},
+      {"date": "2026-02-03", "from_account": "1098-7654-3210", "from_name": "Sanjay Merchants", "amount": "₹1,05,000", "mode": "RTGS"},
+      {"date": "2026-02-03", "from_account": "0987-6543-2109", "from_name": "Pooja Wholesale", "amount": "₹92,000", "mode": "NEFT"},
+      {"date": "2026-02-03", "from_account": "9876-1234-5678", "from_name": "Karan Distributors", "amount": "₹1,12,000", "mode": "IMPS"},
+      {"date": "2026-02-04", "from_account": "8765-2345-6789", "from_name": "Meera Traders", "amount": "₹97,500", "mode": "NEFT"},
+      {"date": "2026-02-04", "from_account": "7654-3456-7890", "from_name": "Ravi Suppliers", "amount": "₹1,15,500", "mode": "RTGS"},
+      {"date": "2026-02-04", "from_account": "6543-4567-8901", "from_name": "Simran Exports", "amount": "₹88,000", "mode": "NEFT"},
+      {"date": "2026-02-05", "from_account": "5432-5678-9012", "from_name": "Arjun Textiles", "amount": "₹1,20,000", "mode": "RTGS"},
+      {"date": "2026-02-05", "from_account": "4321-6789-0123", "from_name": "Divya Imports", "amount": "₹1,02,000", "mode": "NEFT"},
+      {"date": "2026-02-05", "from_account": "3210-7890-1234", "from_name": "Manish Trading", "amount": "₹94,500", "mode": "IMPS"},
+      {"date": "2026-02-05", "from_account": "2109-8901-2345", "from_name": "Nisha Fabrics", "amount": "₹1,10,000", "mode": "NEFT"},
+      {"date": "2026-02-06", "from_account": "1098-9012-3456", "from_name": "Gaurav Wholesale", "amount": "₹98,500", "mode": "RTGS"},
+      {"date": "2026-02-06", "from_account": "0987-0123-4567", "from_name": "Isha Merchants", "amount": "₹1,06,000", "mode": "NEFT"},
+      {"date": "2026-02-06", "from_account": "9876-1111-5678", "from_name": "Tarun Distributors", "amount": "₹91,000", "mode": "IMPS"},
+      {"date": "2026-02-07", "from_account": "8765-2222-6789", "from_name": "Priyanka Traders", "amount": "₹1,14,000", "mode": "NEFT"},
+      {"date": "2026-02-07", "from_account": "7654-3333-7890", "from_name": "Aditya Suppliers", "amount": "₹99,500", "mode": "RTGS"},
+      {"date": "2026-02-07", "from_account": "6543-4444-8901", "from_name": "Sneha Exports", "amount": "₹1,07,000", "mode": "NEFT"},
+      {"date": "2026-02-08", "from_account": "5432-5555-9012", "from_name": "Rohit Textiles", "amount": "₹95,500", "mode": "IMPS"},
+      {"date": "2026-02-08", "from_account": "4321-6666-0123", "from_name": "Varun Imports", "amount": "₹1,11,000", "mode": "NEFT"}
+    ],
+    "unique_counterparties": 47,
+    "pattern_notes": "All transactions from different accounts, amounts structured just below ₹1.5 lakh threshold, concentrated within 7-day period"
+  },
+  "outgoing_transactions": {
+    "total_count": 1,
+    "total_amount": "₹49,50,000",
+    "transactions": [
+      {
+        "date": "2026-02-08",
+        "transaction_time": "16:45 IST",
+        "to_account": "GB29NWBK60161331926819",
+        "beneficiary_name": "Global Trade Partners Ltd",
+        "beneficiary_bank": "NatWest Bank, London, UK",
+        "amount": "₹49,50,000",
+        "purpose": "Payment for textile imports",
+        "swift_code": "NWBKGB2L",
+        "mode": "SWIFT Wire Transfer"
+      }
+    ],
+    "pattern_notes": "Single large international transfer within hours of final incoming transaction, amount represents 99% of total received funds"
+  },
+  "additional_context": {
+    "previous_international_transfers": 2,
+    "previous_international_transfer_dates": ["2024-11-15", "2025-06-22"],
+    "previous_avg_international_amount": "₹3,50,000",
+    "normal_business_pattern": "Monthly domestic transfers ranging ₹50,000-₹2,00,000",
+    "relationship_with_senders": "Customer claims all senders are business partners in textile trade",
+    "verification_attempts": "Phone verification completed, customer provided invoices for 12 of 47 transactions",
+    "documentary_evidence": "Partial documentation available, inconsistencies noted in invoice dates vs. payment dates",
+    "beneficiary_verification": "Global Trade Partners Ltd - Limited information available, company registered in UK (2023), minimal online presence",
+    "red_flags": [
+      "Rapid accumulation of funds from numerous sources",
+      "Timing: All deposits and withdrawal within 8-day window",
+      "Structuring: Individual amounts below reporting thresholds",
+      "Foreign transfer: Immediate movement to high-risk jurisdiction",
+      "Documentation gaps: Majority of claimed business relationships unverified",
+      "Beneficiary concerns: Newly established company with limited track record",
+      "Deviation from pattern: Transaction volume 10x normal business activity"
+    ]
+  },
+  "typology_mapping": {
+    "primary_typology": "Layering (Money Laundering)",
+    "secondary_typologies": ["Trade-Based Money Laundering", "Structuring"],
+    "fincen_reference": "Money Laundering - Layering Phase",
+    "description": "Pattern consistent with layering phase of money laundering where funds from multiple sources are consolidated and rapidly moved to international destination to obscure audit trail"
+  },
+  "investigative_findings": {
+    "internal_checks": {
+      "adverse_media": "No negative news found",
+      "watchlist_screening": "No hits on OFAC, UN, EU sanctions lists",
+      "pep_screening": "Not a Politically Exposed Person",
+      "previous_sars": "No previous SARs filed for this customer"
+    },
+    "external_verification": {
+      "business_verification": "Textile trading business confirmed, operating since 2018",
+      "tax_filings": "Regular tax filings available, declared income ₹8-12 lakhs annually",
+      "trade_licenses": "Valid GST registration, import-export license",
+      "premises_verification": "Physical business location verified"
+    },
+    "analyst_conclusion": "While customer has legitimate business, the transaction pattern deviates significantly from established behavior and exhibits multiple money laundering red flags. Unable to verify majority of claimed business relationships. Recommends SAR filing."
+  }
+}

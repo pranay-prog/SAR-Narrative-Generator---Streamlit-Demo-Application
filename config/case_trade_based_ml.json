@@ -1,0 +1,225 @@
+{
+  "case_id": "SAR-2026-002891",
+  "alert_date": "2026-02-12",
+  "customer": {
+    "name": "Priya Mehta",
+    "customer_id": "CUST-629384",
+    "account_number": "7821-4536-9087",
+    "account_type": "Current Account",
+    "account_open_date": "2020-08-22",
+    "date_of_birth": "1978-11-15",
+    "occupation": "Import-Export Business Owner",
+    "business_type": "Electronics Trading",
+    "address": "456 Linking Road, Bandra West, Mumbai, Maharashtra 400050",
+    "phone": "+91-9123456789",
+    "email": "priya.mehta@techimports.in",
+    "pan": "FGHIJ5678K",
+    "kyc_last_updated": "2025-09-20",
+    "risk_rating": "High",
+    "average_monthly_balance": "₹15,00,000"
+  },
+  "alert_details": {
+    "alert_type": "Trade-Based Money Laundering",
+    "alert_subtype": "Over-Invoicing",
+    "alert_score": 92,
+    "alert_priority": "Critical",
+    "alert_reason": "Customer receiving payments significantly exceeding market values for declared goods",
+    "investigation_start_date": "2026-02-12",
+    "analyst": "Arjun Desai",
+    "reviewer": "Sneha Kapoor"
+  },
+  "suspicious_activity_period": {
+    "start_date": "2025-11-01",
+    "end_date": "2026-01-31",
+    "total_days": 92
+  },
+  "incoming_transactions": {
+    "total_count": 8,
+    "total_amount": "₹2,80,00,000",
+    "total_amount_numeric": 28000000,
+    "average_amount": "₹35,00,000",
+    "transactions": [
+      {
+        "date": "2025-11-08",
+        "from_name": "TechSource International LLC",
+        "from_country": "USA",
+        "amount": "₹42,00,000",
+        "mode": "SWIFT"
+      },
+      {
+        "date": "2025-11-22",
+        "from_name": "TechSource International LLC",
+        "from_country": "USA",
+        "amount": "₹38,50,000",
+        "mode": "SWIFT"
+      },
+      {
+        "date": "2025-12-05",
+        "from_name": "TechSource International LLC",
+        "from_country": "USA",
+        "amount": "₹45,00,000",
+        "mode": "SWIFT"
+      },
+      {
+        "date": "2025-12-18",
+        "from_name": "Global Electronics Trading Inc",
+        "from_country": "USA",
+        "amount": "₹32,00,000",
+        "mode": "SWIFT"
+      },
+      {
+        "date": "2026-01-10",
+        "from_name": "TechSource International LLC",
+        "from_country": "USA",
+        "amount": "₹41,00,000",
+        "mode": "SWIFT"
+      },
+      {
+        "date": "2026-01-15",
+        "from_name": "Asia Pacific Electronics Pte Ltd",
+        "from_country": "Singapore",
+        "amount": "₹28,00,000",
+        "mode": "SWIFT"
+      },
+      {
+        "date": "2026-01-25",
+        "from_name": "TechSource International LLC",
+        "from_country": "USA",
+        "amount": "₹36,50,000",
+        "mode": "SWIFT"
+      },
+      {
+        "date": "2026-01-31",
+        "from_name": "Global Electronics Trading Inc",
+        "from_country": "USA",
+        "amount": "₹17,00,000",
+        "mode": "SWIFT"
+      }
+    ],
+    "unique_counterparties": 3,
+    "pattern_notes": "Payments significantly exceed market value of declared goods"
+  },
+  "outgoing_transactions": {
+    "total_count": 6,
+    "total_amount": "₹1,85,00,000",
+    "transactions": [
+      {
+        "date": "2025-11-25",
+        "transaction_time": "14:30 IST",
+        "to_account": "DOM-7821-4536",
+        "beneficiary_name": "Delhi Electronics Wholesale",
+        "beneficiary_bank": "ICICI Bank, Delhi",
+        "amount": "₹28,00,000",
+        "purpose": "Supplier payment",
+        "mode": "RTGS"
+      },
+      {
+        "date": "2025-12-10",
+        "transaction_time": "11:15 IST",
+        "to_account": "DOM-8932-5647",
+        "beneficiary_name": "Mumbai Tech Distributors",
+        "beneficiary_bank": "HDFC Bank, Mumbai",
+        "amount": "₹32,00,000",
+        "purpose": "Inventory",
+        "mode": "RTGS"
+      },
+      {
+        "date": "2025-12-28",
+        "transaction_time": "15:45 IST",
+        "to_account": "DOM-7821-4536",
+        "beneficiary_name": "Delhi Electronics Wholesale",
+        "beneficiary_bank": "ICICI Bank, Delhi",
+        "amount": "₹35,00,000",
+        "purpose": "Supplier payment",
+        "mode": "RTGS"
+      },
+      {
+        "date": "2026-01-12",
+        "transaction_time": "10:00 IST",
+        "to_account": "DOM-6543-2109",
+        "beneficiary_name": "Bangalore Components Supply",
+        "beneficiary_bank": "Axis Bank, Bangalore",
+        "amount": "₹22,00,000",
+        "purpose": "Parts",
+        "mode": "RTGS"
+      },
+      {
+        "date": "2026-01-20",
+        "transaction_time": "13:20 IST",
+        "to_account": "DOM-8932-5647",
+        "beneficiary_name": "Mumbai Tech Distributors",
+        "beneficiary_bank": "HDFC Bank, Mumbai",
+        "amount": "₹38,00,000",
+        "purpose": "Inventory",
+        "mode": "RTGS"
+      },
+      {
+        "date": "2026-01-30",
+        "transaction_time": "16:10 IST",
+        "to_account": "DOM-7821-4536",
+        "beneficiary_name": "Delhi Electronics Wholesale",
+        "beneficiary_bank": "ICICI Bank, Delhi",
+        "amount": "₹30,00,000",
+        "purpose": "Supplier payment",
+        "mode": "RTGS"
+      }
+    ],
+    "pattern_notes": "Profit margin 34% vs industry standard 8-15%"
+  },
+  "additional_context": {
+    "normal_business_pattern": "Monthly domestic transfers ranging ₹5,00,000-₹15,00,000 for supplier payments",
+    "previous_international_transfers": 12,
+    "previous_international_transfer_dates": [
+      "2023-03-15",
+      "2023-08-20",
+      "2024-01-10",
+      "2024-06-05"
+    ],
+    "previous_avg_international_amount": "₹8,50,000",
+    "invoice_discrepancies": [
+      "Laptops invoiced at $500/unit vs market $300-350/unit",
+      "Tablets invoiced at $225/unit vs market $150-180/unit",
+      "Overall overpricing: 40-50% above market value"
+    ],
+    "profit_margin_analysis": "34% margin far exceeds typical 8-15% in electronics import",
+    "counterparty_verification": {
+      "TechSource_International": "Delaware 2023, minimal presence, virtual office",
+      "Global_Electronics": "Nevada 2024, no verifiable operations",
+      "Asia_Pacific": "Singapore 2024, recent with no history"
+    },
+    "red_flags": [
+      "Invoice values 40-50% above market prices",
+      "Discrepancies between invoices and customs declarations",
+      "Counterparties are newly formed shell companies",
+      "Profit margins inconsistent with legitimate trading",
+      "Pattern consistent with over-invoicing scheme"
+    ]
+  },
+  "typology_mapping": {
+    "primary_typology": "Trade-Based Money Laundering",
+    "secondary_typologies": [
+      "Over-Invoicing",
+      "Value Transfer"
+    ],
+    "fincen_reference": "TBML - Over/Under Invoicing Schemes",
+    "description": "Using trade to disguise illicit fund movements by over-invoicing goods"
+  },
+  "investigative_findings": {
+    "internal_checks": {
+      "adverse_media": "No hits",
+      "watchlist_screening": "Clear",
+      "pep_screening": "Not a PEP",
+      "previous_sars": "None"
+    },
+    "external_verification": {
+      "business_verification": "Legitimate import license since 2020",
+      "tax_filings": "Modest profits 2020-2024",
+      "trade_licenses": "Valid IEC and GST"
+    },
+    "analyst_conclusion": "Transaction pattern exhibits TBML characteristics through over-invoicing. Payments grossly exceed market values. Counterparties lack substance. Recommends SAR filing."
+  }
+}
+
+
+
+
