@@ -46,9 +46,10 @@ Template + AI hybrid generation
 Compliance trace logging
 
 📊 Features
-
 ✔ Automated SAR narrative generation
 ✔ Case-type configurable (Shell, Trade-based ML, Structuring)
 ✔ Audit logging
 ✔ Secure data flow
 ✔ Extensible architecture
+
+Contributor: Arya Singh Vishen
