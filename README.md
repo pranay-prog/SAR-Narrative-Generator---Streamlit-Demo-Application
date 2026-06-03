@@ -52,4 +52,4 @@ Compliance trace logging
 ✔ Secure data flow
 ✔ Extensible architecture
 
-Contributor: Arya Singh Vishen
+Contributor: Arya Singh Vishen, Manya Sinha
